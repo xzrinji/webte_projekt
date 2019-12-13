@@ -1,0 +1,11 @@
+html,body{
+	background: #2c3437;
+	margin: 0;
+}
+h1 { margin:150px auto 30px auto; color:#fff;}
+.car{
+	left: 0;
+	top: 0;
+	position: absolute;
+  width: 100px;
+}
