@@ -1,22 +1,9 @@
-/*$.get( "meniny.xml", function( data ) {
-   var xml = new XMLSerializer().serializeToString(data);
-   var xmlDoc = $.parseXML( xml );
-   var xml = $( xmlDoc );
-   var zaznam = xml.find( "zaznam" );
 
-   console.log(zaznam.length);
-   for(var i = 0; i < zaznam.length; i++)
-   {
-     var den = zaznam[i];
-     var meno = den.getElementsByTagName("SK");
-     console.log(meno[0].);
-   }
-});
-*/
 var months = [ "Január", "Február", "Marec", "Apríl", "Máj", "Jún",
            "Júl", "August", "September", "Október", "November", "December" ];
 var names = []
 var hash = new Object()
+var hash_names = new Object()
 function nacitaj(){
 return $.ajax({
     url:'meniny.xml',
@@ -25,7 +12,9 @@ return $.ajax({
     success:function(data){
     //console.log(data);
       var xml  = data;
+      var i = 0;
       $(xml).find('zaznam').each(function(){
+
         var name = $(this).find("SK").text();
         var dateStr = $(this).find("den").text();
         var month = parseInt(dateStr.substring(0,2));
@@ -34,6 +23,8 @@ return $.ajax({
         names.push(name);
         var date = [day,months[month-1]];
         hash[name] = date;
+        hash_names[latinize(name.toLowerCase())] = i;
+        i++
     });
     }
 });
@@ -48,13 +39,16 @@ $( function() {
 
 function datum()
 {
-  var text = document.getElementById('vstup').value
-  document.getElementById('informacie').innerHTML = hash[text][0] + ". " + hash[text][1];
+  var text = latinize(document.getElementById('vstup').value.toLowerCase());
+  //document.getElementById('informacie').innerHTML = hash[text][0]+ ". " + hash[text][1];
+  var key = names[hash_names[text]];
+  document.getElementById('informacie').innerHTML = hash[key][0]+ ". " + hash[key][1];
+
 }
 
 
-
 $.when(nacitaj()).done(function(){
+
 
   var d = new Date();
   var mesiac = d.getMonth();
@@ -66,7 +60,5 @@ $.when(nacitaj()).done(function(){
       if(hash[key][0] == datum[0] && hash[key][1] == datum[1])
        dnes.innerHTML += key;
   }
-
-
 
 });
