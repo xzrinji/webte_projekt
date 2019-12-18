@@ -31,13 +31,13 @@
        transform="matrix(1.0578451,0,0,1.0578451,-9.8824543,41.325164)"
        id="layer1-5">
       <rect
-         transform="rotate(90)"
-         y="-113.85682"
-         x="52.582012"
+         transform="rotate(135)"
+         y="-200.4429"
+         x="25.708914"
          height="22.45064"
-         width="189.49409"
+         width="103.19085"
          id="rect946-4"
-         style="fill:#808080;fill-rule:evenodd;stroke-width:0.26148868" />
+         style="fill:#808080;fill-rule:evenodd;stroke-width:0.1929637" />
       <rect
          y="138.50916"
          x="9.8889732"
@@ -45,39 +45,21 @@
          width="189.49409"
          id="rect946"
          style="fill:#808080;fill-rule:evenodd;stroke-width:0.26148868" />
-      <circle
-         r="49.177593"
-         cy="149.46722"
-         cx="102.89878"
-         id="path95"
-         style="fill:#808080;fill-opacity:1;stroke-width:0.26458332" />
-      <circle
-         r="27.528761"
-         cy="149.46722"
-         cx="102.36421"
-         id="path95-1"
-         style="fill:#ffffff;fill-opacity:1;stroke-width:0.14810914" />
-      <circle
-         r="37.952271"
-         cy="149.9964"
-         cx="102.88265"
-         id="path112"
-         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.94039732;stroke-miterlimit:4;stroke-dasharray:5.64238409, 5.64238409;stroke-dashoffset:0;stroke-opacity:1" />
       <path
          id="path919"
-         d="M 15.026191,150.00713 H 47.09853"
+         d="M 33.034499,150.00713 H 65.106838"
          style="fill:#ffffff;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <path
          id="path919-4"
-         d="m 161.38784,150.26902 h 32.07234"
-         style="fill:#ffffff;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         id="path919-0"
-         d="m 102.65567,66.346407 v 32.07234"
+         d="m 139.37768,150.26902 h 32.07234"
          style="fill:#ffffff;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <path
          id="path919-4-6"
-         d="m 102.8746,198.37754 v 32.07234"
+         d="M 81.504374,186.43349 58.825803,209.11206"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         id="path919-4-6-7"
+         d="M 102.7423,78.661442 V 110.73378"
          style="fill:#ffffff;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
   </g>
