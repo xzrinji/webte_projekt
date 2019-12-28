@@ -17,6 +17,8 @@ html,body{
 
 .navbar
 {
+		display: flex;
+		flex-wrap: wrap;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -29,14 +31,14 @@ html,body{
 }
 .navbar li
 {
-    float:left;
+    flex: 1;
+		align-items: center;
 
 }
 li a
 {
-    margin-right: 200px;
-    font-size:25px;
 
+    font-size:1.5em;
     display:block;
     color: white;
     text-align: center;
@@ -69,31 +71,32 @@ textPath
 
 }
 
-/*Pre responzivnost*/
 
-@media(max-width:960px) and (min-width:630px)
-{
-
-}
 
 /*Vstup pre meniny*/
 
-#meniny
+#meniny-container
 {
-    position: relative;
-    left: 25%;
-    padding: 2%;
+  background: #333333;
+	padding: 3%;
+	margin-top: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-button
+#meniny-container input, button
 {
-    padding: 1%;
-    font-size: 17px;
+	height: 2.5em;
+	margin: 1%;
+	border-radius: 0.5em;
+	border: none;
+	font-size: 1.2em;
+	padding: 1%;
 }
-input
-{
-    font-size: 20px;
-}
+
+
+
 h3
 {
     font-size: 25px;
@@ -212,15 +215,77 @@ ul
 
 #informacie
 {
+	background: #222222;
 	font-weight: bold;
 	font-family: monospace;
 	color:white;
-	font-size: 3em;
+	font-size: 2rem;
 	text-align: center;
 }
 
+
+
+.datum{
+	align-items: center;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
 #dnes{
+	flex:1;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-top: 1%;
+	padding: 1%;
+	background: #333333;
 	font-family: Arial;
 	color: white;
-	font-size: 2em;
+	font-size: 1.5em;
+}
+
+#dnes:first-child > span { margin-right: auto; }
+#dnes:last-child  > span { margin-left: auto;  }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+	width: 15em;
+  border-radius: 6px;
+  padding: 0.5em;
+	margin-top: 1em;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+/*Pre responzivnost*/
+@media  (max-width:700px)
+{
+	body{
+		margin: 0;
+	}
+	.navbar
+	{
+		flex-direction: column;
+
+	}
+
+	#meniny-container
+	{
+		flex-direction: column;
+		margin-top: 1%;
+	}
+
+	#dnes{
+		font-size: 1.3em;
+	}
 }
