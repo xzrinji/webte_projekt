@@ -3,10 +3,13 @@
 html,body{
 	background-image: url(../images/uzadie1_strana.jpg);
     background-repeat: no-repeat;
-    overflow: hidden;
+
 }
 
-
+object
+{
+	margin-left: 25%;
+}
 
 .car{
 	left: 0;
@@ -116,11 +119,13 @@ img {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
+
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+	margin-top: -3%;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
