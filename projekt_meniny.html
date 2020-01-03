@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+<link rel="icon" href="favicon.png" type="image" sizes="16x16" />
+<title>Fun with cars</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+</head>
+
+<body>
+<div class= "bar">
+    <ul class="navbar">
+            <li><a href="index.html">Doma</a></li>
+            <li><a href="projekt_clenovia.html">Clenovia timu</a></li>
+            <li><a href="projekt.html">Krizovatky</a></li>
+            <li><a href="projekt_meniny.html">Meniny</a></li>
+        </ul>
+</div>
+    <div class="vyznam"> Na Slovensku takmer každý deň prináleží aspoň jednému menu. Pôvodný zoznam bol vlastne kalendár svätých, keďže meniny boli pôvodne sviatkom svätca alebo svätice, ktorého meno človek nosí. Ľudia s daným menom oslavujú svoj sviatok (meniny) v tento deň.</div>
+    
+    <div id="dnes">Dnes má meniny </div>
+    <div id="meniny" class="ui-widget">
+    <h3 style="color:snow">Vniest Datum alebo meno:</h3>
+    <label for = "vstup">Meniny: </label>
+     <input id = "vstup">
+     <button type="button" name="button" onclick="datum()">Prehladaj</button>
+    </div>
+
+    <div id="informacie"></div>
+
+
+
+
+
+
+
+    <div class="footer"><p>&copy;Projekt 2019.</p></div>
+
+<!--<img src="car.png" class="car" id="car_one" onclick="move()">-->
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="motion.js"></script>
+<script src="node_modules/latinize/latinize.js"></script>
+<script src="meniny.js" charset="utf-8"></script>
+
+
+</body>
+</html>
