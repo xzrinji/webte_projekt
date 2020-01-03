@@ -6,13 +6,13 @@ Tim : Zeljko Urban
       Dragana Zrinji
       
 Uloha | Meno                |
-1       Dragana Zrinji 
-2       Zeljko Urban
-3       Vladimir Petrovic
-4       Vladimir Petrovic
-5       Zeljko Urban
-6       Dragana Zrinji
-7.1       Vsetci 
+1       Dragana Zrinji        dizajn css
+2       Zeljko Urban          responzivny dizaj
+3       Vladimir Petrovic     prisposobenie stranky
+4       Vladimir Petrovic     zobrazenie aktualneho datumu s meninami 
+5       Zeljko Urban          zobrazenie pocitadla 
+6       Dragana Zrinji        Favicon :D
+7.1       Vsetci              implementacia cisla 7
 7.2     Zeljko Urban          vykreslovanie krizovatky
 7.3     Vladimir Petrovic     vykreslovanie auticka
 7.4     Dragana Zrinji        semafor, elektricka,znacka, chodnik...
