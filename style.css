@@ -122,30 +122,8 @@ textPath
 
 }
 
-/*Vstup pre meniny*/
 
-#meniny
-{
-    position: relative;
-    left: 25%;
-    padding: 2%;
-    color : orangered;
-    
-}
 
-button
-{
-    padding: 1%;
-    font-size: 17px;
-}
-input
-{
-    font-size: 20px;
-}
-h3
-{
-    font-size: 25px;
-}
 
 
 /* Prikaz Krizovatkov*/
@@ -288,25 +266,135 @@ ul
 
 #informacie
 {
+	background: #222222;
 	font-weight: bold;
 	font-family: monospace;
 	color:white;
-	font-size: 3em;
+	font-size: 2rem;
 	text-align: center;
 }
 
+
+
+.datum{
+	align-items: center;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
 #dnes{
+	flex:1;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-top: 1%;
+	padding: 1%;
+	background: #333333;
 	font-family: Arial;
-	color: orangered;
-	font-size: 2em;
+	color: white;
+	font-size: 1em;
+	height : auto;
 }
 .vyznam {
-	color : orangered;
-	width: 50%;
-	height: 12%; 
-	font-size: 20px;
-	margin : 5% 5% 0% 25%;
+	color : white;
+	background-color : #333333;
+	width: 70%;
+	height: 10vw; 
+	font-size: 1.5vw;
+	margin : 5% 5% 0% 15%;
 	border : 1px solid orangered;
 	padding : 1% 1% 1% 1%;
-	overflow : auto;
+}
+
+#dnes:first-child > span { margin-right: auto; }
+#dnes:last-child  > span { margin-left: auto;  }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+	width: 15em;
+  border-radius: 6px;
+  padding: 0.5em;
+	margin-top: 1em;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+/*Pre responzivnost*/
+@media  (max-width:700px)
+{
+	body{
+		margin: 0;
+	}
+	.navbar
+	{
+		flex-direction: column;
+
+	}
+
+	#meniny-container
+	{
+		height: 2 em;
+		margin: 1%;
+		border-radius: 0.5em;
+		border: none;
+		font-size: 1.2em;
+		padding: 1%;
+		width : 50%;
+		margin-left : 25%;
+	}
+
+	#dnes{
+		font-size: 1.5em;
+	}
+}
+
+/*Vstup pre meniny*/
+
+#meniny-container
+{
+   background: #333333;
+	padding: 3%;
+	margin-top: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width : 70%;
+	height : 0;
+	margin-left : 15%;
+	border : 1px solid orangered;
+}
+
+#meniny-container input, button
+{
+	height: 2vw;
+	margin: 1%;
+	border-radius: 0.5em;
+	padding : 1% 1% 1% 1%;
+	border: none;
+	font-size: 1vw;
+	padding: 1%;
+
+}
+
+h3
+{
+    font-size: 1.5vw;
+}
+
+#gif 
+{
+	width : 400px;
+	height : 400px;
+	margin-left: 30%;
+	margin-right : 20%;
 }

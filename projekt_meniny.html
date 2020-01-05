@@ -22,20 +22,28 @@
 <div id = "content-wrap">
 <div class= "bar">
     <ul class="navbar">
-            <li><a href="index.html">Doma</a></li>
-            <li><a href="projekt_clenovia.html">Clenovia timu</a></li>
-            <li><a href="projekt.html">Krizovatky</a></li>
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="projekt_clenovia.html">Členovia tímu</a></li>
+            <li><a href="projekt.html">Križovatky</a></li>
             <li><a href="projekt_meniny.html">Meniny</a></li>
         </ul>
 </div>
+
+    <div id="dnes">
+    <div id="datum-dnes" class="datum"></div>
+    <div id="hodiny-dnes" class=datum></div>
+    <div id="meniny-dnes" class="datum"></div>
+    </div>
+    
+    
     <div class="vyznam"> Na Slovensku takmer každý deň prináleží aspoň jednému menu. Pôvodný zoznam bol vlastne kalendár svätých, keďže meniny boli pôvodne sviatkom svätca alebo svätice, ktorého meno človek nosí. Ľudia s daným menom oslavujú svoj sviatok (meniny) v tento deň.</div>
     
-    <div id="dnes">Dnes má meniny </div>
-    <div id="meniny" class="ui-widget">
+
+    <div id="meniny-container" class="ui-widget">
     <h3 style="color:snow">Vniest Datum alebo meno:</h3>
-    <label for = "vstup">Meniny: </label>
+     <div class=tooltip id="tooltip"><span class="tooltiptext" id="tooltiptext">Dátum zavdať vo formáte mm.dd,mm.d alebo m.d</span></div>
      <input id = "vstup">
-     <button type="button" name="button" onclick="datum()">Prehladaj</button>
+     <button type="button" name="button" onclick="datum()">Prehľadaj</button>
     </div>
 
     <div id="informacie"></div>
