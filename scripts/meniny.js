@@ -1,4 +1,4 @@
-
+c
 var months = [ "Január", "Február", "Marec", "Apríl", "Máj", "Jún",
            "Júl", "August", "September", "Október", "November", "December" ];
 var names = []
@@ -52,6 +52,7 @@ function dateTooltip()
 function detectNum(str)
 {
   return /[\d]/.test(str);
+  
 }
 
 function findNameFromDate(str)
