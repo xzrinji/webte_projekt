@@ -1,8 +1,21 @@
 /*  Home page */
 
 html,body{
-	background-image: url(../images/uzadie1_strana.jpg);
-    background-repeat: no-repeat;
+  background-image: url(../images/uzadie1_strana.jpg);
+  /* Location of the image */
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
   background-size: cover;
 
 }
@@ -234,10 +247,7 @@ h3
    text-align: center;
 }
 
-ul
-{
-	background: red;
-}
+
 
 #informacie
 {
@@ -319,4 +329,48 @@ ul
   {
     width: 100%;
   }
+}
+
+
+
+
+/* Clenovia timu */
+
+#grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: aliceblue;
+    
+    
+    
+}
+.item
+{
+    border: 3px solid grey;
+    position: relative;
+
+}
+img
+{
+    border-radius: 40%;
+    position: relative;
+    left: 33%;
+    padding: 2%;
+    
+}
+.box
+{
+    position: relative;
+    left: 2%;
+}
+h4
+{
+    font-size: 125%;
+}
+h5
+{
+    font-size: 120%;
+    position: relative;
+    left: 39%;
 }
