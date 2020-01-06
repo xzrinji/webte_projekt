@@ -24,31 +24,31 @@ html,body{
     background-color: #333333;
     color:white;
     position:relative;
-    
-    
+
+
 }
-li
+.navbar li
 {
     float:left;
-    
+
 }
 li a
 {
     margin-right: 200px;
-    font-size:25px; 
-    
+    font-size:25px;
+
     display:block;
     color: white;
     text-align: center;
     font-family: serif;
     padding: 25px;
     text-decoration: none;
-    
+
 }
 a:hover
 {
     color:orangered;
-    
+
 }
 h1
 {
@@ -59,7 +59,7 @@ h1
 }
 textPath
 {
-    
+
 
    font-size: 150%;
    color: #FFFF00;
@@ -73,7 +73,7 @@ textPath
 
 @media(max-width:960px) and (min-width:630px)
 {
-    
+
 }
 
 /*Vstup pre meniny*/
@@ -81,18 +81,20 @@ textPath
 #meniny
 {
     position: relative;
-    left: 25%;
+    left: 22%;
     padding: 2%;
 }
 
 button
 {
     padding: 1%;
-    font-size: 17px;
+    font-size: 15px;
 }
 input
 {
-    font-size: 20px;
+    
+    position: relative;
+    left: -4%;
 }
 h3
 {
@@ -203,4 +205,69 @@ img {
    background-color: #333333;
    color: white;
    text-align: center;
+   
+}
+
+ul
+{
+	background: white;
+}
+
+#informacie
+{
+	font-weight: bold;
+	font-family: monospace;
+	color:white;
+	font-size: 3em;
+	text-align: center;
+    position:relative;
+    left: -18%;
+}
+
+#dnes{
+	font-family: Arial;
+	color: white;
+	font-size: 2em;
+    padding: 1%;
+}
+
+/* Clenovia timu */
+
+#grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: aliceblue;
+    
+    
+    
+}
+.item
+{
+    border: 3px solid grey;
+    position: relative;
+
+}
+img
+{
+    border-radius: 40%;
+    position: relative;
+    left: 33%;
+    padding: 2%;
+    
+}
+.box
+{
+    position: relative;
+    left: 2%;
+}
+h4
+{
+    font-size: 125%;
+}
+h5
+{
+    font-size: 120%;
+    position: relative;
+    left: 39%;
 }
