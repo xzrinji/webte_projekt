@@ -28,9 +28,9 @@
      inkscape:window-height="705"
      id="namedview7042"
      showgrid="false"
-     inkscape:zoom="0.50139763"
-     inkscape:cx="823.24322"
-     inkscape:cy="174.2874"
+     inkscape:zoom="8.0223621"
+     inkscape:cx="614.52854"
+     inkscape:cy="444.14863"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -15807,4 +15807,38 @@ AL6NGwHrn/vo0UUAf//Z
      id="path4"
      inkscape:connector-curvature="0"
      inkscape:label="#path7143" />
+  <rect
+     style="opacity:0.63199995;fill:#999999;stroke-width:0.06464095"
+     id="rect4868-31"
+     width="6.6822371"
+     height="0.80091232"
+     x="30.097046"
+     y="80.133476"
+     transform="matrix(0,1,1,0,0,0)" />
+  <rect
+     style="opacity:0.63199995;fill:#999999;stroke-width:0.06464095"
+     id="rect4868-31-0"
+     width="6.6822371"
+     height="0.80091232"
+     x="-34.602467"
+     y="120.03555"
+     transform="scale(-1,1)" />
+  <rect
+     style="opacity:0.63199995;fill:#999999;stroke-width:0.06464095"
+     id="rect4868-31-2"
+     width="6.6822371"
+     height="0.80091232"
+     x="-170.3519"
+     y="85.428375"
+     transform="scale(-1,1)" />
+  <rect
+     style="opacity:0.63199995;fill:#999999;stroke-width:0.06464095"
+     id="rect4868-31-05"
+     width="6.6822371"
+     height="0.80091232"
+     x="166.77835"
+     y="116.35132"
+     transform="matrix(0,1,1,0,0,0)"
+     inkscape:transform-center-x="-5.6067236"
+     inkscape:transform-center-y="0.8574989" />
 </svg>
