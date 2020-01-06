@@ -3,19 +3,26 @@
 html,body{
 	background-image: url(../images/uzadie1_strana.jpg);
     background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
-object
+.mySlides .road
 {
-	margin-left: 25%;
+  width: 100%;
 }
 
-.car{
-	left: 0;
-	top: 0;
-	position: absolute;
-  width: 100px;
+.mySlides
+{
+ 
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mySlides object
+{
+  display: flex;
 }
 
 .navbar
@@ -112,9 +119,15 @@ h3
   box-sizing: border-box;
 }
 
-img {
-  vertical-align: middle;
+.road
+{
+  position:relative;
+  top: 0;
+  left: 0;
 }
+
+
+
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
@@ -125,7 +138,8 @@ img {
 /* Hide the images by default */
 .mySlides {
   display: none;
-	margin-top: -3%;
+  position: relative;
+
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -183,6 +197,13 @@ img {
   content: "";
   display: table;
   clear: both;
+}
+
+.car
+{
+  float:left;
+  width: 10%;
+  height: 10%;
 }
 
 /* Six columns side by side */
@@ -292,5 +313,10 @@ ul
 
 	#dnes{
 		font-size: 1.3em;
-	}
+  }
+  
+  .mySlides
+  {
+    width: 100%;
+  }
 }
