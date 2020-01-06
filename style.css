@@ -1,0 +1,400 @@
+/*  Home page */
+
+html,body{
+	background-image: url(uzadie1_strana.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width : 100%;
+    height : 100%;
+}
+
+
+.car{
+	left: 0;
+	top: 0;
+	position: absolute;
+  width: 100px;
+}
+
+.navbar
+{
+    list-style-type: none;
+  	 margin : 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #333333;
+    color:white;
+   // position:relative;
+    //width : auto;
+
+
+}
+.navbar li
+{
+	 padding : 0px;
+    float:left;
+    margin : 1% 0% 1% 1%;
+    box-shadow : 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 48%;
+
+}
+li a
+{
+    font-size:20px;
+	 width : auto;	 
+    display:block;
+    color: white;
+    text-align: center;
+    font-family: serif;
+    padding: 2%;
+    text-decoration: none;
+
+}
+a:hover
+{
+    color:orangered;
+
+}
+h1
+{
+    color: snow;
+    position: absolute;
+    top:32%;
+    left: 17%;
+}
+textPath
+{
+
+
+   font-size: 150%;
+   color: #FFFF00;
+   font-family: Arial Black, Gadget, sans-serif;
+   text-shadow: 0px 0px 0 rgb(236,236,-19),1px 1px 0 rgb(228,228,-27),2px 2px 0 rgb(219,219,-36),3px 3px 0 rgb(210,210,-45),4px 4px 0 rgb(202,202,-53),5px 5px 0 rgb(193,193,-62),6px 6px 0 rgb(184,184,-71),7px 7px 0 rgb(175,175,-80),8px 8px 0 rgb(167,167,-88),9px 9px 0 rgb(158,158,-97),
+10px 10px  0 rgb(149,149,-106),11px 11px 10px rgba(0,0,0,0.51),11px 11px 1px rgba(0,0,0,0.5),0px 0px 10px rgba(0,0,0,.2)
+
+}
+
+/*Pre responzivnost*/
+
+[class*="bar"]{
+//for mobile phones
+	width: 100%;
+}
+
+@media only screen and ( min-width: 600px){
+	//for tablets
+	.bar-1 {
+		width: 8.33%;
+	}
+	.bar-2
+	{
+		width : 16.66%;
+	}
+	.bar-3 {
+		width:25%;
+	}
+	.bar-4 {
+		33.33%;
+	}
+	
+}
+
+@media only screen and(min-width: 768px){
+	//for desktop
+	
+	.bar-1 {
+		width :8.33%;
+	}
+	.bar-2 {
+		width : 16.66%;
+	}
+	.bar-3 {
+		width : 25%;
+	}
+	.bar-4 {
+		width: 33.33%;
+	}
+}
+
+
+@media(max-width:960px) and (min-width:630px)
+{
+
+}
+
+
+
+
+
+/* Prikaz Krizovatkov*/
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Footer */
+
+
+
+#page-container 
+{
+	position : relative;
+	min-height : 100vh;
+}
+
+#content-wrap {
+padding-bottom : 2.5rem ; //vyska footer-u
+}
+
+.footer
+{
+	position : absolute;
+	bottom : 0;
+	width: 100%;
+	height: 2.5rem;
+	background-color: #333333;
+   color: white;
+   text-align: center;
+   font-size : 15px;
+}
+/*
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333333;
+   color: white;
+   text-align: center;
+   font-size : 15px;
+   padding : 0px 3px 0px 3px;
+   height: 30px;
+   
+}
+*/
+ul
+{
+	background: orangered;
+}
+
+#informacie
+{
+	background: #222222;
+	font-weight: bold;
+	font-family: monospace;
+	color:white;
+	font-size: 2rem;
+	text-align: center;
+}
+
+
+
+.datum{
+	align-items: center;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+#dnes{
+	flex:1;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-top: 1%;
+	padding: 1%;
+	background: #333333;
+	font-family: Arial;
+	color: white;
+	font-size: 1em;
+	height : auto;
+}
+.vyznam {
+	color : white;
+	background-color : #333333;
+	width: 70%;
+	height: 10vw; 
+	font-size: 1.5vw;
+	margin : 5% 5% 0% 15%;
+	border : 1px solid orangered;
+	padding : 1% 1% 1% 1%;
+}
+
+#dnes:first-child > span { margin-right: auto; }
+#dnes:last-child  > span { margin-left: auto;  }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+	width: 15em;
+  border-radius: 6px;
+  padding: 0.5em;
+	margin-top: 1em;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+/*Pre responzivnost*/
+@media  (max-width:700px)
+{
+	body{
+		margin: 0;
+	}
+	.navbar
+	{
+		flex-direction: column;
+
+	}
+
+	#meniny-container
+	{
+		height: 2 em;
+		margin: 1%;
+		border-radius: 0.5em;
+		border: none;
+		font-size: 1.2em;
+		padding: 1%;
+		width : 50%;
+		margin-left : 25%;
+	}
+
+	#dnes{
+		font-size: 1.5em;
+	}
+}
+
+/*Vstup pre meniny*/
+
+#meniny-container
+{
+   background: #333333;
+	padding: 3%;
+	margin-top: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width : 70%;
+	height : 0;
+	margin-left : 15%;
+	border : 1px solid orangered;
+}
+
+#meniny-container input, button
+{
+	height: 2vw;
+	margin: 1%;
+	border-radius: 0.5em;
+	padding : 1% 1% 1% 1%;
+	border: none;
+	font-size: 1vw;
+	padding: 1%;
+
+}
+
+h3
+{
+    font-size: 1.5vw;
+}
+
+#gif 
+{
+	width : 400px;
+	height : 400px;
+	margin-left: 30%;
+	margin-right : 20%;
+}

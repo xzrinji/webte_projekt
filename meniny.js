@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*$.get( "meniny.xml", function( data ) {
    var xml = new XMLSerializer().serializeToString(data);
    var xmlDoc = $.parseXML( xml );
@@ -13,10 +14,17 @@
    }
 });
 */
+=======
+
+>>>>>>> origin/dragana
 var months = [ "Január", "Február", "Marec", "Apríl", "Máj", "Jún",
            "Júl", "August", "September", "Október", "November", "December" ];
 var names = []
 var hash = new Object()
+<<<<<<< HEAD
+=======
+var hash_names = new Object()
+>>>>>>> origin/dragana
 function nacitaj(){
 return $.ajax({
     url:'meniny.xml',
@@ -25,7 +33,13 @@ return $.ajax({
     success:function(data){
     //console.log(data);
       var xml  = data;
+<<<<<<< HEAD
       $(xml).find('zaznam').each(function(){
+=======
+      var i = 0;
+      $(xml).find('zaznam').each(function(){
+
+>>>>>>> origin/dragana
         var name = $(this).find("SK").text();
         var dateStr = $(this).find("den").text();
         var month = parseInt(dateStr.substring(0,2));
@@ -34,6 +48,11 @@ return $.ajax({
         names.push(name);
         var date = [day,months[month-1]];
         hash[name] = date;
+<<<<<<< HEAD
+=======
+        hash_names[latinize(name.toLowerCase())] = i;
+        i++
+>>>>>>> origin/dragana
     });
     }
 });
@@ -48,14 +67,27 @@ $( function() {
 
 function datum()
 {
+<<<<<<< HEAD
   var text = document.getElementById('vstup').value
   document.getElementById('informacie').innerHTML = hash[text][0] + ". " + hash[text][1];
 }
 
+=======
+  var text = latinize(document.getElementById('vstup').value.toLowerCase());
+  //document.getElementById('informacie').innerHTML = hash[text][0]+ ". " + hash[text][1];
+  var key = names[hash_names[text]];
+  document.getElementById('informacie').innerHTML = hash[key][0]+ ". " + hash[key][1];
+
+}
+>>>>>>> origin/dragana
 
 
 $.when(nacitaj()).done(function(){
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/dragana
   var d = new Date();
   var mesiac = d.getMonth();
   var den = d.getDate();
@@ -67,6 +99,9 @@ $.when(nacitaj()).done(function(){
        dnes.innerHTML += key;
   }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/dragana
 });

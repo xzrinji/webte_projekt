@@ -9,6 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="style/style.css">
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+<link rel="icon" href="images/favicon.png" type="image" sizes="16x16" />
 <title>Fun with cars</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
@@ -16,14 +17,28 @@
 </head>
 
 <body>
+
+<div id = "page-container">
+<div id = "content-wrap">
+<div class= "bar">
     <ul class="navbar">
-            <li><a href="index.html">Doma</a></li>
-            <li><a href="projekt_clenovia.html">Clenovia timu</a></li>
-            <li><a href="projekt.html">Krizovatky</a></li>
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="projekt_clenovia.html">Členovia tímu</a></li>
+            <li><a href="projekt.html">Križovatky</a></li>
             <li><a href="projekt_meniny.html">Meniny</a></li>
         </ul>
+</div>
 
-    <div id="dnes"><div id="datum-dnes" class="datum"></div><div id="hodiny-dnes" class=datum></div><div id="meniny-dnes" class="datum"></div></div>
+    <div id="dnes">
+    <div id="datum-dnes" class="datum"></div>
+    <div id="hodiny-dnes" class=datum></div>
+    <div id="meniny-dnes" class="datum"></div>
+    </div>
+    
+    
+    <div class="vyznam"> Na Slovensku takmer každý deň prináleží aspoň jednému menu. Pôvodný zoznam bol vlastne kalendár svätých, keďže meniny boli pôvodne sviatkom svätca alebo svätice, ktorého meno človek nosí. Ľudia s daným menom oslavujú svoj sviatok (meniny) v tento deň.</div>
+    
+
     <div id="meniny-container" class="ui-widget">
     <h3 style="color:snow">Vniest Datum alebo meno:</h3>
      <div class=tooltip id="tooltip"><span class="tooltiptext" id="tooltiptext">Dátum zavdať vo formáte mm.dd,mm.d alebo m.d</span></div>
@@ -34,13 +49,19 @@
     <div id="informacie"></div>
 
 
-    <div class="footer"><p>&copy;Projekt 2019.</p></div>
+
+
+
+
+    </div>
+  <footer class="footer"><p>&copy;Projekt 2019.</p></footer>  
+    </div>
 
 <!--<img src="car.png" class="car" id="car_one" onclick="move()">-->
 
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="scripts/motion.js"></script>
+<script src="motion.js"></script>
 <script src="node_modules/latinize/latinize.js"></script>
 <script src="scripts/meniny.js" charset="utf-8"></script>
 
