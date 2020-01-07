@@ -7,7 +7,7 @@ var Car = function(obj, path, id) {
 	this.pos = 0;
 	this.path = path;
 	this.length = path.getTotalLength();
-	this.speed = 1;
+	this.speed = path.getTotalLength() / 300;
 	this.box = obj.getBBox();
 	this.running = false;
 	this.id = id;
@@ -55,9 +55,10 @@ var path_one,path_two,path_three,path_four;
 var current;
 
 var userInput = [];
-var riesenia = [[2, 1, 4, 3]];
+var riesenia = [[1, 2, 3],[1,2,3],[1,2,3],[],[2,3,1],
+				[2,1,4,3],[2,1,4,3],[2,1,4,3],[3,1,2],[1,2,3],[3,1,2]];
 var cars;
-
+var score = 0;
 
 
 window.onload=function() {
@@ -83,8 +84,9 @@ function sleep(ms) {
 	} 
   } 
 
-async function loadAnimation() {
+async function loadAnimation(krizovatka) {
 	await sleep(500);
+	userInput = [];
 	console.log("new animation");
 a = document.getElementById("active");
 	// Get the SVG document inside the Object tag
@@ -98,26 +100,32 @@ svgDoc = a.getSVGDocument();
 
 path_one = svgDoc.querySelector('#path1');
 path_two = svgDoc.querySelector('#path2');
-path_three = svgDoc.querySelector('#path3');
+
 
 
 car_one = new Car(svgDoc.querySelector('#car1'), path_one, 1);
 car_two = new Car(svgDoc.querySelector('#car2'), path_two, 2);
-car_three = new Car(svgDoc.querySelector('#car3'), path_three, 3);
+
 var four = false;
 if (svgDoc.querySelector('#car4') != null){
 	
 	path_four = svgDoc.querySelector('#path4');
 	car_four = new Car(svgDoc.querySelector('#car4'), path_four, 4);
+	path_three = svgDoc.querySelector('#path3');
+	car_three = new Car(svgDoc.querySelector('#car3'), path_three, 3);
 	
 	cars = [car_one,car_two,car_three,car_four];
 	
 	
 	four = true;
+}else if (svgDoc.querySelector('#car3') != null)
+{
+	path_three = svgDoc.querySelector('#path3');
+	car_three = new Car(svgDoc.querySelector('#car3'), path_three, 3);
+	cars = [car_one,car_two,car_three];
 }else
 {
-	
-	cars = [car_one,car_two,car_three];
+	cars = [car_one,car_two];	
 }
 
 
@@ -125,17 +133,26 @@ if (svgDoc.querySelector('#car4') != null){
 
 async function checkTraffic(id)
 {
-	if(isEqual(riesenia[0],userInput))
+	var el = document.getElementsByClassName("caption-container")[0].firstElementChild.innerHTML;
+	var num = el[el.length - 1] -1;
+	if(isEqual(riesenia[num],userInput))
 	{
 		await sleep(2000);
 		alert("Good Job");
+		score++;
+		document.getElementById("score").innerHTML = String(score);
 	}
 	
-	else if(riesenia[0].length == userInput.length)
+	else if(riesenia[num].length == userInput.length)
 	{
 		await sleep(2000);
 		alert("Better luck next time");
-		
+		score--;
+		document.getElementById("score").innerHTML = String(score);
+		for (const car in cars) {
+			car.pos = 0;
+			car.render();
+		}
 	}
 }
 

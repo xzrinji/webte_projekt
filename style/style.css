@@ -25,6 +25,13 @@ html,body{
   width: 100%;
 }
 
+#score
+{
+  margin-left: 1em;
+  font-size: 3em;
+  color:white;
+}
+
 .mySlides
 {
  
