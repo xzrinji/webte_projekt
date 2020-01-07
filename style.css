@@ -4,8 +4,7 @@ html,body{
 	background-image: url(uzadie1_strana.jpg);
     background-repeat: no-repeat;
     overflow: hidden;
-    width : 100%;
-    height : 100%;
+   
 }
 
 
@@ -16,44 +15,44 @@ html,body{
   width: 100px;
 }
 
+
 .navbar
 {
     list-style-type: none;
-  	 margin : 0;
-    padding: 0;
-    overflow:hidden;
+    margin: 0px;
+    padding: 0px;
+    
     background-color: #333333;
     color:white;
-   // position:relative;
-    //width : auto;
-
-
+    position:static;
+    
+    
 }
-.navbar li
+li
 {
-	 padding : 0px;
     float:left;
-    margin : 1% 0% 1% 1%;
-    box-shadow : 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    width: 48%;
-
+    
+    
+    
+    
 }
 li a
 {
-    font-size:20px;
-	 width : auto;	 
-    display:block;
+    margin-right: 200px;
+    font-size:25px; 
+    
+    display: inline;
     color: white;
     text-align: center;
     font-family: serif;
-    padding: 2%;
+    padding: 25px;
     text-decoration: none;
-
+    
 }
 a:hover
 {
     color:orangered;
-
+    
 }
 h1
 {
@@ -62,16 +61,17 @@ h1
     top:32%;
     left: 17%;
 }
+
 textPath
 {
 
-
+    
    font-size: 150%;
    color: #FFFF00;
    font-family: Arial Black, Gadget, sans-serif;
    text-shadow: 0px 0px 0 rgb(236,236,-19),1px 1px 0 rgb(228,228,-27),2px 2px 0 rgb(219,219,-36),3px 3px 0 rgb(210,210,-45),4px 4px 0 rgb(202,202,-53),5px 5px 0 rgb(193,193,-62),6px 6px 0 rgb(184,184,-71),7px 7px 0 rgb(175,175,-80),8px 8px 0 rgb(167,167,-88),9px 9px 0 rgb(158,158,-97),
 10px 10px  0 rgb(149,149,-106),11px 11px 10px rgba(0,0,0,0.51),11px 11px 1px rgba(0,0,0,0.5),0px 0px 10px rgba(0,0,0,.2)
-
+   
 }
 
 /*Pre responzivnost*/
@@ -104,6 +104,7 @@ textPath
 	
 	.bar-1 {
 		width :8.33%;
+        
 	}
 	.bar-2 {
 		width : 16.66%;
@@ -128,12 +129,10 @@ textPath
 
 /* Prikaz Krizovatkov*/
 
-* {
-  box-sizing: border-box;
-}
+
 
 img {
-  vertical-align: middle;
+  vertical-align: middl;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -226,7 +225,7 @@ img {
 #page-container 
 {
 	position : relative;
-	min-height : 100vh;
+	
 }
 
 #content-wrap {
@@ -235,7 +234,7 @@ padding-bottom : 2.5rem ; //vyska footer-u
 
 .footer
 {
-	position : absolute;
+	position : relative;
 	bottom : 0;
 	width: 100%;
 	height: 2.5rem;
@@ -337,7 +336,8 @@ ul
 	}
 	.navbar
 	{
-		flex-direction: column;
+        display: flex;
+		flex-direction: row;
 
 	}
 
@@ -356,6 +356,11 @@ ul
 	#dnes{
 		font-size: 1.5em;
 	}
+     .item
+    {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 /*Vstup pre meniny*/
@@ -398,3 +403,4 @@ h3
 	margin-left: 30%;
 	margin-right : 20%;
 }
+
