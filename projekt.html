@@ -26,11 +26,12 @@
        
    
 
+<div id="score"><p>0</p></div>
 
 <div class="container">
   <div class="mySlides">
     <!--<object id="five" data="krizovatky/krizovatka_5.svg" type="image/svg+xml" ></object>-->
-    <object data="krizovatky/krizovatka_2.svg" type="image/svg+xml" id="five"></object>
+    <object data="krizovatky/krizovatka_1.svg" type="image/svg+xml" id="active"></object>
     <div class="numbertext">1 / 15</div>
   </div>
 
@@ -57,56 +58,56 @@
 
   <div class="mySlides">
     <div class="numbertext">6 / 15</div>
-    <object data="krizovatky/krizovatka_3.svg" type="image/svg+xml"></object>
+    <object data="krizovatky/krizovatka_6.svg" type="image/svg+xml"></object>
   </div>
 
     <div class="mySlides">
     <div class="numbertext">7 / 15</div>
-    <object data="krizovatky/krizovatka_3.svg" type="image/svg+xml"></object>
+    <object data="krizovatky/krizovatka_7.svg" type="image/svg+xml"></object>
   </div>
 
     <div class="mySlides">
     <div class="numbertext">8 / 15</div>
-    <object data="krizovatky/krizovatka_3.svg" type="image/svg+xml"></object>
+    <object data="krizovatky/krizovatka_8.svg" type="image/svg+xml"></object>
   </div>
 
     <div class="mySlides">
     <div class="numbertext">9 / 15</div>
-    <object data="krizovatky/krizovatka_3.svg" type="image/svg+xml"></object>
+    <object data="krizovatky/krizovatka_9.svg" type="image/svg+xml"></object>
   </div>
 
     <div class="mySlides">
     <div class="numbertext">10 / 15</div>
-    <object data="krizovatky/krizovatka_3.svg" type="image/svg+xml"></object>
+    <object data="krizovatky/krizovatka_10.svg" type="image/svg+xml"></object>
   </div>
 
     <div class="mySlides">
     <div class="numbertext">11 / 15</div>
-    <object data="krizovatky/krizovatka_3.svg" type="image/svg+xml"></object>
+    <object data="krizovatky/krizovatka_11.svg" type="image/svg+xml"></object>
   </div>
 
     <div class="mySlides">
     <div class="numbertext">12 / 15</div>
-    <object data="krizovatky/krizovatka_3.svg" type="image/svg+xml"></object>
+    <object data="krizovatky/kruhac_1.svg" type="image/svg+xml"></object>
   </div>
 
     <div class="mySlides">
     <div class="numbertext">13 / 15</div>
-
+    <object data="krizovatky/kruhac_2.svg" type="image/svg+xml"></object>
   </div>
 
     <div class="mySlides">
     <div class="numbertext">14 / 15</div>
-
+    <object data="krizovatky/kruhac_3.svg" type="image/svg+xml"></object>
   </div>
 
     <div class="mySlides">
     <div class="numbertext">15 / 15</div>
-
+    <object data="krizovatky/kruhac_4.svg" type="image/svg+xml"></object>
   </div>
 
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+  <a class="prev" onclick="plusSlides(-1); loadAnimation();">❮</a>
+  <a class="next" onclick="plusSlides(1); loadAnimation();">❯</a>
 
 <!-- Zobrazenia -->
 
@@ -116,49 +117,49 @@
 
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="krizovatky/krizovatka_1.svg" style="width:100%" onclick="currentSlide(1)" alt="Krizovatka 1">
+      <img class="demo cursor" src="krizovatky/krizovatka_1.svg" style="width:100%" onclick="currentSlide(1); loadAnimation();" alt="Krizovatka 1">
     </div>
     <div class="column">
-      <img class="demo cursor" src="krizovatky/krizovatka_2.svg" style="width:100%" onclick="currentSlide(2)" alt="Krizovatka 2">
+      <img class="demo cursor" src="krizovatky/krizovatka_2.svg" style="width:100%" onclick="currentSlide(2); loadAnimation();" alt="Krizovatka 2">
     </div>
     <div class="column">
-      <img class="demo cursor" src="krizovatky/krizovatka_3.svg" style="width:100%" onclick="currentSlide(3)" alt="Krizovatka 3">
+      <img class="demo cursor" src="krizovatky/krizovatka_3.svg" style="width:100%" onclick="currentSlide(3); loadAnimation();" alt="Krizovatka 3">
     </div>
     <div class="column">
-      <img class="demo cursor" src="krizovatky/krizovatka_4.svg" style="width:100%" onclick="currentSlide(4)" alt="Krizovatka 4">
+      <img class="demo cursor" src="krizovatky/krizovatka_4.svg" style="width:100%" onclick="currentSlide(4); loadAnimation();" alt="Krizovatka 4">
     </div>
     <div class="column">
-      <img class="demo cursor" src="krizovatky/krizovatka_5.svg" style="width:100%" onclick="currentSlide(5)" alt="Krizovatka 5">
+      <img class="demo cursor" src="krizovatky/krizovatka_5.svg" style="width:100%" onclick="currentSlide(5); loadAnimation();" alt="Krizovatka 5">
     </div>
     <div class="column">
-      <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(6)" alt="Krizovatka 6">
+      <img class="demo cursor" src="krizovatky/krizovatka_6.svg" style="width:100%" onclick="currentSlide(6); loadAnimation();" alt="Krizovatka 6">
     </div>
       <div class="column">
-      <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(7)" alt="Krizovatka 7">
+      <img class="demo cursor" src="krizovatky/krizovatka_7.svg" style="width:100%" onclick="currentSlide(7); loadAnimation();" alt="Krizovatka 7">
     </div>
       <div class="column">
-      <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(8)" alt="Krizovatka 8">
+      <img class="demo cursor" src="krizovatky/krizovatka_8.svg" style="width:100%" onclick="currentSlide(8); loadAnimation();" alt="Krizovatka 8">
     </div>
       <div class="column">
-      <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(9)" alt="Krizovatka 9">
+      <img class="demo cursor" src="krizovatky/krizovatka_9.svg" style="width:100%" onclick="currentSlide(9); loadAnimation();" alt="Krizovatka 9">
     </div>
       <div class="column">
-      <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(10)" alt="Krizovatka 10">
+      <img class="demo cursor" src="krizovatky/krizovatka_10.svg" style="width:100%" onclick="currentSlide(10); loadAnimation();" alt="Krizovatka 10">
     </div>
       <div class="column">
-      <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(11)" alt="Krizovatka 11">
+      <img class="demo cursor" src="krizovatky/krizovatka_11.svg" style="width:100%" onclick="currentSlide(11); loadAnimation();" alt="Krizovatka 11">
     </div>
       <div class="column">
-      <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(12)" alt=" Krizovatka 12">
+      <img class="demo cursor" src="krizovatky/kruhac_1.svg" style="width:100%" onclick="currentSlide(12); loadAnimation();" alt=" Krizovatka 12">
     </div>
       <div class="column">
-      <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(13)" alt=" Krizovatka 13">
+      <img class="demo cursor" src="krizovatky/kruhac_2.svg" style="width:100%" onclick="currentSlide(13); loadAnimation();" alt=" Krizovatka 13">
     </div>
       <div class="column">
-      <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(14)" alt=" Krizovatka 14">
+      <img class="demo cursor" src="krizovatky/kruhac_3.svg" style="width:100%" onclick="currentSlide(14); loadAnimation();" alt=" Krizovatka 14">
     </div>
       <div class="column">
-      <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(15)" alt=" MounKrizovatka 15">
+      <img class="demo cursor" src="krizovatky/kruhac_4.svg" style="width:100%" onclick="currentSlide(15); loadAnimation();" alt=" Krizovatka 15">
     </div>
   </div>
 </div>

@@ -25,6 +25,13 @@ html,body{
   width: 100%;
 }
 
+#score
+{
+  margin-left: 1em;
+  font-size: 3em;
+  color:white;
+}
+
 .mySlides
 {
  
@@ -35,7 +42,9 @@ html,body{
 
 .mySlides object
 {
-  display: flex;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar
