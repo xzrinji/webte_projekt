@@ -7,7 +7,7 @@ var Car = function(obj, path, id) {
 	this.pos = 0;
 	this.path = path;
 	this.length = path.getTotalLength();
-	this.speed = path.getTotalLength() / 300;
+	this.speed = path.getTotalLength() / 150;
 	this.box = obj.getBBox();
 	this.running = false;
 	this.id = id;
@@ -59,7 +59,7 @@ var riesenia = [[1, 2, 3],[1,2,3],[1,2,3],[],[2,3,1],
 				[2,1,4,3],[2,1,4,3],[2,1,4,3],[3,1,2],[1,2,3],[3,1,2]];
 var cars;
 var score = 0;
-
+var animationFrame;
 
 window.onload=function() {
 	loadAnimation();
@@ -138,7 +138,7 @@ async function checkTraffic(id)
 	if(isEqual(riesenia[num],userInput))
 	{
 		await sleep(2000);
-		alert("Good Job");
+		alert("Správne");
 		score++;
 		document.getElementById("score").innerHTML = String(score);
 	}
@@ -146,7 +146,7 @@ async function checkTraffic(id)
 	else if(riesenia[num].length == userInput.length)
 	{
 		await sleep(2000);
-		alert("Better luck next time");
+		alert("Nesprávne");
 		score--;
 		document.getElementById("score").innerHTML = String(score);
 		for (const car in cars) {
@@ -167,6 +167,7 @@ function run(current)
 		}
 	}
 	if(!running){
+		pause();
 		play(current);
 		current.running = true;
 		current.running = true;
@@ -188,8 +189,15 @@ function animator(car) {
 	current.update(dt); // update the arrow on each call
 }
 // buttons
+
 function play(car) {
-    window.requestAnimationFrame(animator);
+	
+	
+    animationFrame  = window.requestAnimationFrame(animator);
+ 
+        // ... Code for Drawing the Frame ...
+ 
+   
 	current = car;
 	
 }
@@ -203,6 +211,7 @@ function pause() {
 cars.forEach(function (car) {
     car.obj.onclick = function()
 	{
+		
 		console.log(car.id);
 		run(car);
 	}
