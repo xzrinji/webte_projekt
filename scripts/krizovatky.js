@@ -1,6 +1,3 @@
-// arrow constructor
-
-
 
 var Car = function(obj, path, id) {
 	this.obj = obj;
@@ -55,10 +52,18 @@ var path_one,path_two,path_three,path_four;
 var current;
 
 var userInput = [];
-var riesenia = [[1, 2, 3],[1,2,3],[1,2,3],[],[2,3,1],
-				[2,1,4,3],[2,1,4,3],[2,1,4,3],[3,1,2],[1,2,3],[3,1,2]];
+var riesenia = [[1, 2, 3],[1,2,3],
+				[1,2,3],[2,1],
+				[2,3,1],[2,1,4,3],
+				[2,1,4,3],[2,1,4,3],
+				[3,1,2],[1,2,3],
+				[3,1,2],[1,2],
+				[2,1,4,3],[1,2,3],
+				[1,2,3]
+			];
 var cars;
 var score = 0;
+var game = 0;
 var animationFrame;
 
 window.onload=function() {
@@ -92,10 +97,6 @@ a = document.getElementById("active");
 	// Get the SVG document inside the Object tag
 svgDoc = a.getSVGDocument();
 
-
-//path_one = svgDoc.querySelector('#car_one_path');
-//path_two = svgDoc.querySelector('#car_two_path');
-//path_three = svgDoc.querySelector('#car_three_path');
 
 
 path_one = svgDoc.querySelector('#path1');
@@ -134,12 +135,18 @@ if (svgDoc.querySelector('#car4') != null){
 async function checkTraffic(id)
 {
 	var el = document.getElementsByClassName("caption-container")[0].firstElementChild.innerHTML;
-	var num = el[el.length - 1] -1;
+	var num = parseInt(el.slice(-2)) - 1;
+	console.log(num);
+
+	if(game >= 15)
+		document.getElementById("gameover").style.display = "flex";
+
 	if(isEqual(riesenia[num],userInput))
 	{
 		await sleep(2000);
 		alert("Správne");
 		score++;
+		game++;
 		document.getElementById("score").innerHTML = String(score);
 	}
 	
@@ -148,16 +155,18 @@ async function checkTraffic(id)
 		await sleep(2000);
 		alert("Nesprávne");
 		score--;
+		game++;
 		document.getElementById("score").innerHTML = String(score);
-		for (const car in cars) {
-			car.pos = 0;
-			car.render();
-		}
 	}
+
+	if(game >= 15)
+		document.getElementById("gameover").style.display = "flex";
+
 }
 
 function run(current)
 {
+	
 	var running = false; 
 	for (var car of cars)
 	{
@@ -191,15 +200,9 @@ function animator(car) {
 // buttons
 
 function play(car) {
-	
-	
+		
     animationFrame  = window.requestAnimationFrame(animator);
- 
-        // ... Code for Drawing the Frame ...
- 
-   
 	current = car;
-	
 }
 function pause() {
 	window.cancelAnimationFrame(raf);
@@ -211,18 +214,10 @@ function pause() {
 cars.forEach(function (car) {
     car.obj.onclick = function()
 	{
-		
 		console.log(car.id);
 		run(car);
 	}
 });
 
-/*for (var car in cars) {
-	car.obj.onclick = function()
-	{
-		console.log(car.id);
-		run(car);
-	}
-}
-	*/
+
 }

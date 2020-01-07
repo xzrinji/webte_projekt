@@ -25,6 +25,24 @@ html,body{
   width: 100%;
 }
 
+#gameover
+{
+  
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3em;
+  background: #222222;
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  width: 15em;
+  height: 15em;
+  z-index: 10;
+  padding: 3%;
+  display: none;
+}
+
 #score
 {
   margin-left: 1em;
